@@ -17,13 +17,10 @@ yum install svn nginx php mariadb  python  vim mariadb-server mariadb-test php-f
 #配置服务:
 #nginx,mariadb,php-fpm
 
-#/etc/nginx/nginx.conf
-#/etc/my.cnf.d/*
-#/etc/php-fpm.d/www.conf
-#/etc/php.ini
+cp -r etc/  /etc/
 
-#systemctl enable nginx
-#systemctl enable php-fpm
-#systemctl enable mariadb
+systemctl enable nginx
+systemctl enable php-fpm
+systemctl enable mariadb
 
-
+yum -y update
