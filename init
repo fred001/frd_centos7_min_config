@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+#yum -y install git
+#git clone https://github.com/fred001/frd_centos7_min_config.git
+#cd frd_centos7_min_config
+
+#yum -y update
+
+#RHEL/CentOS 7 64-Bit
+wget http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-8.noarch.rpm
+rpm -ivh epel-release-7-8.noarch.rpm
+
+
+yum install svn nginx php mariadb  python  vim mariadb-server mariadb-test php-fpm tree php-mcrypt
+
+
+#配置服务:
+#nginx,mariadb,php-fpm
+
+#/etc/nginx/nginx.conf
+#/etc/my.cnf.d/*
+#/etc/php-fpm.d/www.conf
+#/etc/php.ini
+
+#systemctl enable nginx
+#systemctl enable php-fpm
+#systemctl enable mariadb
+
+
